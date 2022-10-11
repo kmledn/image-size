@@ -8,7 +8,7 @@ const types_1 = require("./types");
 const detector_1 = require("./detector");
 // Maximum buffer size, with a default of 512 kilobytes.
 // TO-DO: make this adaptive based on the initial signature of the image
-const MaxBufferSize = 8192 * 1024;
+const MaxBufferSize = 12288 * 1024;
 // This queue is for async `fs` operations, to avoid reaching file-descriptor limits
 const queue = new queue_1.default({ concurrency: 100, autostart: true });
 const globalOptions = {
